@@ -56,21 +56,32 @@ section {
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #007acc;
+  padding: 10px 20px;
+  margin: 15px 0;
+  background-color: #007bff;
   color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: 500;
-  transition: transform 0.2s ease, background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
-  background-color: #005f99;
-  transform: scale(1.05);
+.dark-mode .btn-view-work,
+.dark-mode .btn-download-resume {
+  color: #f0f0f0;
+  background-color: #333;
+  border: 1px solid #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #00000088;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .btn-view-work:hover,
+.dark-mode .btn-download-resume:hover {
+  color: #222;
+  background-color: #f0f0f0;
+  border-color: #222;
+  cursor: pointer;
 }
 
 .project-grid {
@@ -138,6 +149,14 @@ iframe {
 
 #theme-toggle:hover {
   background-color: #005f99;
+}
+
+.resume-image {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .dark-mode {
